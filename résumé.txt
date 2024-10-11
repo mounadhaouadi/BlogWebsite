@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Site web</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+         <fieldset class="topBar">
+            <img src="Cpu.jpg" alt="" width="40px">
+             <input type="text" class="input1" placeholder="What's on your mind CPU member?">
+             <button class="postBtn">Post</button>
+         </fieldset>
+
+          <fieldset class="Post">
+            <div class="postHeader">
+                <img src="user.png" alt="" width="100px" class="pdp">
+               <div class="right">
+                 <h1>Koussay Attaya</h1>
+                    <p> Président </p>
+                </div>  
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit .
+                Assumenda asperiores suscipit saepe ! Doloribus alias nulla exercitationem deserunt
+                officia recusandae doloremque , sed aliquam ipsa et voluptatum , in quaerat tenetur
+                explicabo beatae .</p>
+                <p class="reactionCount">20 Likes, 0 comments</p>
+                <div class="reactionBar">
+                    <p><img src="like.png" alt="" width="30px">Like</p>
+                    <p> <img src="comment.png" alt="" width="30px">comment</p>
+                 </div> 
+                <input type="text" class="commentBar" placeholder="Write your comment here...">
+          </fieldset>
+
+    </body>
+</html>
+-----------------------------------------------------------------------------------------------------------
+.topBar{
+    border-radius: 5px;      ===> bordure fel coinet
+    display: flex;           ===>bech nestaaml flex box bech nadhem les élement 
+    gap: 13px;               ===> bech naaml espacement mabin les élement 
+}
+.input1{                     
+    flex: 1;         ===> ki yabda el parent display flex , naatiwha valeur bech tekhou el espace el feragh
+    border-radius: 5px;  
+    border-style: solid;  ===> bech el bordure nrodouha simple
+    padding: 7px;    ===> ki taati valeur bark yemchi mel jihet lkol
+    background-color: rgb(238, 233, 233);
+}
+.postBtn{
+     border-radius: 5px;
+     border-style: none; ===> el bordure mayodhorch wala thot bordure style wnaatiha nafs el couleur 
+     padding: 0 15px; ===> lfouk louta , imin issar
+     font-weight: 600; ===> kobr el ktiba
+     background-color: blue;
+     color: rgb(250, 253, 255);
+
+}
+
+.postHeader > .right > h1 { ===> el balise h1 mtaa right1 mtaa el parent postHeader
+    margin-bottom: 0;  ===> el margin mel fouk
+}
+.postHeader > .right > p {
+    margin-top: 0;    ===> el margin melouta
+}
+
+.pdp{
+    border-radius: 50%; ===>bordure kad kad mel jnabet lkol twali doura
+}
+.postHeader{
+        display: flex;
+        flex-direction: row; ===> hothom fi ligne
+        align-items: center;  ===> fel centre par rapport lel ligne 
+        gap: 10px; 
+        border-bottom: 1px solid #959595; ===> khat , ordhou 1px , nature solid , couleur 
+                                                  Syntax: <line-width> || <line-style> || <color>
+}
+.reactionCount {
+    margin-bottom: 0; ===> Supprime l'espace en bas de cet élément */
+}
+
+.reactionBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly; ===> Répartit les éléments avec des espaces égaux
+    border-top: 1px solid #959595;
+    border-bottom: 1px solid #959595;
+}
+.reactionBar > p {  ===> el p eli feha image wlike wala image wcomment zouz
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.reactionBar > p > img{
+    width: 24px;
+}
+.commentBar {
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 12px;
+    padding: 10px;
+}
+.Post {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
